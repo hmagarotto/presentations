@@ -1,5 +1,3 @@
-# Presentations
-
 ## 2019-11 - Rocketseat Experience 2019
 
 * [Slides](2019-11-rocketseat)
