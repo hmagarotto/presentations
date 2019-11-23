@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>OpenAPI - Usando um padrão para especificação de APIs</title>
+
+    <link rel="stylesheet" href="../commons/reveal.js/css/reset.css">
+    <link rel="stylesheet" href="../commons/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="../commons/reveal.js/css/theme/zenvia.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../commons/reveal.js/lib/css/monokai.css">
+
+    <!-- Font Awesome -->
+    <link href="../commons/fontawesome/css/all.min.css" rel="stylesheet">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '../commons/reveal.js/css/print/pdf.css' : '../commons/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <p>
+            <h1>
+              <img height="200px" class="plain" src="assets/logo-openapi-color-crop.png"/>
+              OpenAPI
+            </h1>
+          </p>
+          <h2>Usando um padrão para especificação de APIs</h2>
+          <aside data-markdown class="notes" data-external="intro.md"></aside>
+        </section>
+
+        <section>
+          <h2>Documentação de API</h2>
+          <section>
+            <p>
+              <h2>Categorizando por conteúdo</h2>
+              <small>https://stoplight.io/api-documentation-guide/basics/</small>
+            </p>
+            <ul>
+              <li>Reference and functionality</li>
+              <li>Guides and tutorials</li>
+              <li>Examples and use cases</li>
+            </ul>
+            <aside data-markdown class="notes" data-external="doc-type.md"></aside>
+          </section>
+          <section>
+            <h2>Categorizando pelo formato</h2>
+            <span style="color:lightskyblue">Human Readable</span>
+            <span style="color:orangered">Machine Readable</span>
+          </section>
+          <section>
+            <h2 style="color:lightskyblue">Human Readable</h2>
+            <i class="fas fa-file-word fa-2x"></i>
+            <i class="fab fa-google-drive fa-2x"></i>
+            <i class="fas fa-file-pdf fa-2x"></i>
+            <i class="fab fa-html5 fa-2x"></i>
+            <i class="fab fa-markdown fa-2x"></i>
+            <i class="fab fa-wordpress fa-2x"></i>
+            <aside data-markdown class="notes" data-external="doc-format-human.md"></aside>
+          </section>
+          <section>
+            <h2 style="color:orangered">Machine Readable</h2>
+            <p>
+              <img class="plain" height="75px" src="assets/logo-api-blueprint.svg"/>
+              api blueprint
+            </p>
+            <p>
+              <img class="plain" height="75px" src="assets/logo-raml.png"/>
+            </p>
+            <p>
+              <img class="plain" height="75px" src="assets/logo-openapi-color-crop.png"/>
+              OpenAPI Specification
+            </p>
+            <aside data-markdown class="notes" data-external="doc-format-machine.md"></aside>
+          </section>
+        </section>
+
+
+        <section>
+          <h2>OpenAPI Specification</h2>
+          <section>
+              <img class="plain" src="assets/logo-openapi-white.png"/>
+          </section>
+          <section>
+            <h2>O que é?</h2>
+            OpenAPI Specification (OAS) define um padrão para descrição/definição de APIs REST através de um documento YAML ou JSON.
+          </section>
+          <section>
+            <h2>Como surgiu?</h2>
+            <p>
+              <img class="plain" height="100px" src="assets/logo-swagger.png"/><br/>
+              Swagger
+            </p>
+            <p>
+              <i class="fas fa-arrow-down fa-2x"></i>
+            </p>
+            <p>
+                <img class="plain" height="100px" src="assets/logo-openapi-white.png"/>
+            </p>
+            <aside data-markdown class="notes" data-external="openapi-history.md"></aside>
+          </section>
+        </section>
+
+
+        <section>
+          <h2>OpenAPI? Porque?</h2>
+          <section></section>
+          <section>
+            <h2>Doc-as-code</h2>
+            <p>
+              <i class="fas fa-file-code fa-2x"></i>
+              <i class="fade-left fab fa-git-alt fa-2x"></i>
+              <i class="fade-left fab fa-jenkins fa-2x"></i>
+            </p>
+            <blockquote cite="https://idratherbewriting.com/learnapidoc/pubapis_docs_as_code.html">
+              &ldquo;In short, treating docs like code means to use the same systems, processes, and workflows with docs as you do with programming code.&rdquo;
+              <small>idratherbewriting.com/learnapidoc</small>
+            </blockquote>
+            
+            <aside data-markdown class="notes" data-external="openapi-doc-as-code.md"></aside>
+          </section>
+          <section>
+              <h2>API First</h2>
+          </section>	
+          <section>
+            <h2>Ferramentas</h2>
+            <p>
+                <i class="fas fa-file-code fa-2x"></i>
+            </p>
+            <p>
+                <i class="fas fa-arrow-down fa-2x" style="color: orangered;"></i>
+                <br/>
+                <i class="fas fa-tools fa-2x"></i>
+            </p>
+            <p>
+              <i class="fas fa-arrow-down fa-2x" style="color: orangered;"></i><br/>
+              <i class="fab fa-node-js fa-2x"></i>
+              <i class="fab fa-java fa-2x"></i>
+              <i class="fab fa-html5 fa-2x"></i>
+            </p>
+            <aside data-markdown class="notes" data-external="openapi-tools.md"></aside>
+          </section>
+          <section>
+            <h2>Lista de Ferramentas</h2>
+            <small>https://openapi.tools</small>
+          </section>
+
+        </section>
+
+        <section>
+          <h2>OpenAPI - Estrutura</h2>
+          <section>
+            <h2>$ (root)</h2>
+            <pre><code class="hljs json" data-trim data-line-numbers>
+              {
+                "openapi": "3.0.2",
+                "info": {},
+                "components": {},
+                "paths": {},
+                "servers": []
+              }
+            </code></pre>
+            <aside data-markdown class="notes" data-external="spec-root.md"></aside>
+          </section>
+          <section>
+            <h2>$.info:</h2>
+            <pre><code class="hljs json" data-trim data-line-numbers>
+              {
+                "title": "My Books",
+                "version": "1.0.0"
+              }
+            </code></pre>
+            <aside data-markdown class="notes" data-external="spec-root.md"></aside>
+          </section>
+          <section>
+            <h2>$.components:</h2>
+            <pre><code class="hljs json" data-trim data-line-numbers>
+              {
+                "schemas": {},
+                "responses": {},
+                "parameters": {},
+                "headers": {}
+              }
+            </code></pre>
+            <aside data-markdown class="notes" data-external="spec-root.md"></aside>
+          </section>
+
+          <section>
+            <h2>$.components.schemas:</h2>
+            <pre><code class="hljs json" data-trim data-line-numbers>
+              {
+                "book": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "string" },
+                    "title": { "type": "string" },
+                    "author": { "type": "string" }
+                  },
+                  "required": [ "title", "author" ]
+                },
+                "book-list": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/book"
+                  }
+                }
+              }
+            </code></pre>
+            <aside data-markdown class="notes" data-external="spec-schemas.md"></aside>
+          </section>
+
+          <section>
+            <h2>$.paths:</h2>
+            <pre><code class="hljs json" data-trim data-line-numbers data-noescape>
+{
+  "/books": {
+    "get": {
+      "responses": {
+        "200": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/book-list"
+              }
+            }
+          }
+        }
+      }
+    },
+    "post": {}
+  },
+  "/books/{bookId}": {}
+}
+            </code></pre>
+            <aside data-markdown class="notes" data-external="spec-paths.md"></aside>
+          </section>
+          <section>
+              <h2>$.paths:</h2>
+              <pre><code class="hljs json" data-trim data-line-numbers data-noescape>
+  {
+    "/books": {},
+    "/books/{bookId}": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/book"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+            </code></pre>
+            <aside data-markdown class="notes" data-external="spec-paths.md"></aside>
+          </section>
+
+          <section>
+              <h2>$.paths:</h2>
+              <pre><code class="hljs json" data-trim data-line-numbers data-noescape>
+  {
+    "/books": {},
+    "/books/{bookId}": {
+      "get": {},
+      "parameters": [{
+        "name": "bookId",
+        "in": "path",
+        "schema": {
+          "type": string
+        }
+      }]
+    }
+  }
+            </code></pre>
+            <aside data-markdown class="notes" data-external="spec-paths.md"></aside>
+          </section>
+
+          <section>
+            <h2>$.servers:</h2>
+            <pre><code class="hljs json" data-trim data-line-numbers>
+              [{
+                "description": "Development Server",
+                "url": "http://localhost:3000"
+              }, {
+                "description": "Production Server",
+                "url": "https://api.zenvia.com"
+              }]
+            </code></pre>
+            <aside data-markdown class="notes" data-external="spec-root.md"></aside>
+          </section>
+          <section>
+            <p>
+                <h2>Referencia OpenAPI</h2>
+                https://github.com/OAI/OpenAPI-Specification
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <h2>Hands-On</h2>
+          <section>https://hmagarotto.github.io/slides</section>
+        </section>
+        <section>
+          <h2>Hands-On</h2>
+          <h2>ReDoc - Criando a especificação</h2>
+          <section>
+            <u>Executar:</u>
+            <pre><code class="hljs bash" data-trim data-line-numbers data-noescape>
+            <mark>~$</mark> mkdir books-api && cd books-api
+            <mark>~/books-api$</mark> npx create-openapi-repo .
+            </code></pre>
+          </section>
+          <section>
+              <pre>
+<b>Welcome to the OpenAPI-Repo generator!</b>
+Do you already have OpenAPI/Swagger spec for your API? <b style="color: yellow;">No</b>
+Select OpenAPI version: <b style="color: yellow;">OpenAPI 3</b>
+API Name: <b style="color: yellow;">books-api</b>
+Split spec into separate files? <b style="color: yellow;">Yes</b>
+Prepare manual code samples folder? <b style="color: yellow;">No</b>
+Install SwaggerUI? <b style="color: yellow;">No</b>
+Set up Travis CI? <b style="color: yellow;">Yes</b>
+Specify name of GitHub repo in format User/Repo:<br/><b style="color: yellow;">hmagarotto/books-api-spec</b>
+            </pre>
+          </section>
+          <section>
+            <u>Executar:</u>
+            <pre><code class="hljs bash" data-trim data-line-numbers data-noescape>
+              <mark>~/books-api$</mark> npm start
+            </code></pre>
+            <u>Acessar:</u><br/>
+            http://localhost:8000
+          </section>
+          <section>
+              <p style="color: orangered;">
+                Vamos recriar nossa API "Books" com o ReDoc!
+              </p>
+          </section>
+        </section>
+
+        <section>
+          <h2>Hands-On</h2>
+          <h2>Prism - Criando um mock server</h2>
+          <section>
+            <pre><code class="hljs bash" data-trim data-line-numbers data-noescape>
+            <mark>~/books-api$</mark> npm run build
+            <mark>~/books-api$</mark> npx -p @stoplight/prism-cli \
+            prism mock -p 3000 ./web_deploy/openapi.json
+            </code></pre>
+            Em outro terminal:
+            <pre><code class="hljs bash" data-trim data-line-numbers>
+              curl -s 'http://localhost:3000/books' | jq
+            </code></pre>
+          </section>
+        </section>
+        <section>
+          <h2>Hands-On</h2>
+          <h2>Swagger-UI - Interagindo com o server</h2>
+          <section>
+            <pre><code class="hljs bash" data-trim data-line-numbers data-noescape>
+            <mark>~/books-api$</mark> docker run \
+            -p 9000:8080 \
+            -v${PWD}/web_deploy/openapi.json:/openapi.json \
+            -e SWAGGER_JSON=/openapi.json \
+            swaggerapi/swagger-ui
+            </code></pre>
+          </section>
+        </section>
+
+        <section
+          data-background-image="https://i2.wp.com/www.zenvia.com/wp-content/uploads/2019/04/home-homem2-croped.png"
+          data-background-position="bottom right"
+          data-background-size="40%"
+          data-background-color="#00558f">
+          <img class="plain" height="25%" src="../commons/assets/images/logo-zenvia-white.svg"/>
+          <section>
+              <div style="margin: 25% 0; font-size: 150%;">
+                <p>Obrigado</p>
+              </div>  
+          </section>
+          <section>
+            <div style="margin: 25% 40% 0 0% ; font-size: 60%;">
+              <p>
+                <small>PLATAFORMA DE COMUNICAÇÃO</small><br/>
+                Revolucione a comunicação com seus clientes via
+                SMS, voz, WhatsApp, e-mail ou aplicativos de mensagens.
+                Mais engajamento, mais resultados.<br/>
+              </p>
+              zenvia.com
+              <p>
+                <span style="color: orangered;">Henrique Magarotto</span><br/>
+                <i class="fas fa-envelope"></i> henrique.magarotto@zenvia.com<br/>
+                <i class="fab fa-github"></i> hmagarotto
+              </p>
+              <p>
+                <span style="color: orangered;">Rodrigo Kamada</span><br/>
+                <i class="fas fa-envelope"></i> rodrigo.kamada@zenvia.com<br/>
+                <i class="fab fa-github"></i> rodrigokamada<br/>
+              </p>
+            </div>
+          </section>
+        </section>
+        </div>
+    </div>
+
+    <script src="../commons/reveal.js/js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: '../commons/reveal.js/plugin/external/external.js' },
+          { src: '../commons/reveal.js/plugin/markdown/marked.js' },
+          { src: '../commons/reveal.js/plugin/markdown/markdown.js' },
+          { src: '../commons/reveal.js/plugin/notes/notes.js', async: true },
+          { src: '../commons/reveal.js/plugin/highlight/highlight.js', async: true }
+        ],
+        external: { urlBase: 'http://localhost:5557' },
+        history: true
+      });
+    </script>
+  </body>
+</html>
