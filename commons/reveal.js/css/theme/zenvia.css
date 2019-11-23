@@ -273,7 +273,7 @@ body {
     background-color: #191919; } }
 
 .reveal .pause-overlay {
-  background-image: url("../../assets/zenvia-logo-white.svg");
+  background-image: url("../../../assets/images/logo-zenvia-white.svg");
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
@@ -286,6 +286,3 @@ body {
   border: 0;
   box-shadow: none;
   background: none; }
-
-
-  
