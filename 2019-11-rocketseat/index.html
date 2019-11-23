@@ -430,9 +430,18 @@ Specify name of GitHub repo in format User/Repo:<br/><b style="color: yellow;">h
           { src: '../commons/reveal.js/plugin/markdown/marked.js' },
           { src: '../commons/reveal.js/plugin/markdown/markdown.js' },
           { src: '../commons/reveal.js/plugin/notes/notes.js', async: true },
-          { src: '../commons/reveal.js/plugin/highlight/highlight.js', async: true }
+          { src: '../commons/reveal.js/plugin/highlight/highlight.js', async: true },
+          { src: '../commons/reveal.js/plugin/chalkboard/chalkboard.js' }
         ],
         external: { urlBase: 'http://localhost:5557' },
+        keyboard: {
+            67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
+            66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
+            46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+            8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
+            68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
         history: true
       });
     </script>
