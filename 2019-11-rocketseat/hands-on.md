@@ -6,6 +6,8 @@ Criando uma API usando a especificação [OpenAPI versão 3](https://github.com/
 
 * Node.js (node, npm e npx)
 * Docker
+  * docker pull swaggerapi/swagger-ui
+  * docker pull openapitools/openapi-generator-cli
 
 ## ReDoc - Criando a especificação
 
