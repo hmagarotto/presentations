@@ -286,6 +286,3 @@ docker run --rm openapitools/openapi-generator-cli list
 # API da Zenvia usando o OpenAPI
 
 Conheça nossa [ZenAPI](https://zenapi.zenvia.com/) e sua [documentação](https://zenvia.github.io/zenvia-openapi-spec/) feita usando o OpenAPI
-
-* 
-* 
