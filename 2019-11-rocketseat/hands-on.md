@@ -20,18 +20,18 @@ npx create-openapi-repo .
 ```
 
 Respostas ao criar o repositório para o OpenAPI:
-```
-Welcome to the OpenAPI-Repo generator!
-Do you already have OpenAPI/Swagger spec for your API? No
-Select OpenAPI version: OpenAPI 3
-API Name: books-api
-Split spec into separate files? Yes
-Prepare manual code samples folder? No
-Install SwaggerUI? No
-Set up Travis CI? Yes
-Specify name of GitHub repo in format User/Repo:
-hmagarotto/books-api-spec
-```
+
+**Welcome to the OpenAPI-Repo generator!**
+
+* Do you already have OpenAPI/Swagger spec for your API? **No**
+* Select OpenAPI version: **OpenAPI 3**
+* API Name: **books-api**
+* Split spec into separate files? **Yes**
+* Prepare manual code samples folder? **No**
+* Install SwaggerUI? **No**
+* Set up Travis CI? **Yes**
+* Specify name of GitHub repo in format User/* Repo:
+**hmagarotto/books-api-spec**
 
 _Use seus dados em "name of GitHub repo"_
 
