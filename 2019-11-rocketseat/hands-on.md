@@ -76,6 +76,7 @@ properties:
     description: Book Id
     type: string
     example: e186fa32-0d5d-11ea-a604-e7edcb22b6c9
+    readOnly: true
   title:
     description: Book title
     type: string
@@ -84,6 +85,9 @@ properties:
     description: Book Author
     type: string
     example: Joe
+required:
+  - title
+  - author
 ```
 
 Criar o arquivo "~/books-api/spec/components/schemas/**book-list.yaml**".
